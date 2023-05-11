@@ -18,15 +18,23 @@
          .card{
             width:500px;
          }
+         label{
+            width:100px;
+         }
+         .button{
+            margin-top:10px;
+            margin-left:200px;
+         }
       </style>
    </head>
    <body>
+    
       <div class="container">
          <div class="row">
             <div class="col-md-6 col-sm-6 mx-auto mt-4">
                <div class="card">
                   <div class="card-body">
-                    <h1>employee</h1>
+                    <h1>Employee Registration</h1>
                      <form action="{{route('employee.store')}}" method="POST">
                         @csrf
                         <div class="form-group">
@@ -57,7 +65,7 @@
                            <label for="remark">Remark:</label>
                            <textarea class="form-control" id="remark" name="remark"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Register</button>
+                        <button type="submit" class="button btn btn-primary">Register</button>
                      </form>
                   </div>
                </div>
